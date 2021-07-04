@@ -9301,7 +9301,7 @@ local linkgpp = jsondecode(https.request('https:/api.telegram.org/bot'..token..'
 if linkgppok == true then 
 local Teext = '✧'..ta.title_..'\n'..linkgpp.result 
 local inline = {{{text = ta.title, url=linkgpp.result}}} 
-send_inline_key(msg.chat_id_,Text,,inline,msg.id_/2097152/05) 
+send_inline_key(msg.chat_id_,Text,nil,inline,msg.id_/2097152/05) 
 else 
 send(msg.chat_id_, msg.id_,'✧لا يوجد رابط ارسل ضع رابط') 
 end 
